@@ -62,7 +62,7 @@ namespace BlizzardFetcher.Helpers
         public string HTTPGET(string url)
         {
             var client = new TimeoutWebClient(new TimeSpan(0,1,0));
-            Console.WriteLine("Http request: " + url);
+            //Console.WriteLine("Http request: " + url);
 
             var response = client.DownloadString(url);
             return response;
